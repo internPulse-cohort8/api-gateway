@@ -31,6 +31,14 @@ app.use(
   })
 );
 
+
+app.get('/', (req, res) => {
+    res.status(200).json({
+        status: "success",
+        message: 'Hello from server and welcome',
+    })
+})
+
 // Crypto wallet route
 app.use(
   "/wallet",
