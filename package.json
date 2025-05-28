@@ -1,0 +1,24 @@
+{
+  "name": "api-gateway",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Build completed'",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "eslint . --max-warnings=0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "eslint": "^9.27.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "globals": "^16.2.0",
+    "helmet": "^8.1.0",
+    "http-proxy-middleware": "^3.0.5"
+  }
+}
