@@ -42,7 +42,6 @@ app.use(
   })
 );
 
-
 // Virtual card route
 app.use(
   "/card",
