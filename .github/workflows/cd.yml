@@ -1,4 +1,4 @@
-name: CD
+name: API GATEWAY CD
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to Render
-        uses: render-actions/deploy@v1
+        uses: johnbeynon/render-deploy-action@v0.0.8
         with:
           service-id: ${{ secrets.RENDER_SERVICE_ID }}
           api-key: ${{ secrets.RENDER_API_KEY }}
